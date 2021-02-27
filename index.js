@@ -1,19 +1,13 @@
-const express =require('express')
-const app = express()
-var cors = require('cors')
 
-app.use(express.json())
+const _ = require('lodash')
+const config = require('./config.js')
+const app = require('./src/index.js')
 
-app.use(cors())
+app.listen(config.PORT, config.HOST, () => {
+  config.log.info('Listening on http://%s:%s', config.HOST, config.PORT)
+  config.log.info('Configuration set to %s', JSON.stringify(_.omit(config, ['log'])) )
+});
 
-app.listen(3000,()=>{
-    console.log('conectado en el puerto 3000')
-})
-
-
-app.get('/',(req,res)=>{
-    res.send('bienvenido')
-})
 
 
 
