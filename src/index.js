@@ -40,6 +40,5 @@ app.use(middlewares.errorsMiddleware);
 
 app.get('/', (req, res) => res.status(200).json("El servidor Funciona!"));
 
-//routes here
-
+app.use('/users', require('./controllers/users'))
 module.exports = server;

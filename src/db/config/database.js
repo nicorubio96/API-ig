@@ -1,7 +1,7 @@
 const config = require('../../../config.js');
 
-console.log('DB CONFIG');
-console.log(config);
+// console.log('DB CONFIG');
+// console.log(config);
 
 module.exports = {
   development: {
