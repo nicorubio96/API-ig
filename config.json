@@ -1,11 +1,11 @@
 {
   "HOST": "localhost",
-  "PORT": "3000",
-  "DB_USER": "mario",
-  "DB_PASS": "1234",
+  "PORT": "5432",
+  "DB_USER": "postgres",
+  "DB_PASS": "casa1234",
   "DB_HOST": "localhost",
   "DB_PORT": "5432",
-  "DB_NAME": "insta",
+  "DB_NAME": "instagram",
   "LOG_LEVEL": "INFO",
   "JWT_SECRET": "My token"
 }
